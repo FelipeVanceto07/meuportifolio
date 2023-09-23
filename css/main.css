@@ -1,14 +1,35 @@
+/* meu primeiro Comentário */
+/* Reset do CSS para o navegador */
+*{
+
+     margin:0 ; /* Margem */
+     padding:0 ; /* Preenchimento */
+}
 body{
-    background-color:aliceblue;
-}
+      height: 100%; /* altura */
+      width:  100%; /* largura */
+      display: flex;
+      justify-content:center;
+      background: linear-gradient( #75e7f3 #c7c8c8 );
+      background-repeat: no-repeat;
+    }   
+.imagem img{
 
-h1 {
-    
+  display: flex;
+  justify-content: center;
 }
+.imagem img{
+    width:170px;
+    border-radius:200px;
+    margin-top: 30px;
+}
+.name{
 
-p {
-    color:red;
-}
-div{
-    
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight:600;
+    color: blue;
+    font-family:'Courier New', Courier, monospace; 
 }
