@@ -2,58 +2,59 @@
 /* Reset do CSS para o navegador */
 *{
 
-     margin:0 ; /* Margem */
-     padding:0 ; /* Preenchimento */
+    margin:0 ; /* Margem */
+    padding:0 ; /* Preenchimento */
 }
 body{
-      height: 100%; /* altura */
-      width:  100%; /* largura */
-      display: flex;
-      justify-content:center;
-      background: linear-gradient( #00e5ff,rgb(253, 255, 255) );
-      background-repeat: no-repeat;
-      }   
+     height: 100%; /* altura */
+     width:  100%; /* largura */
+     display: flex;
+     justify-content:center;
+     background: linear-gradient( #00e5ff,rgb(253, 255, 255) );
+     background-repeat: no-repeat;
+     }   
 .imagem{
 
-  display: flex;
-  justify-content: center;
-  }
+ display: flex;
+ justify-content: center;
+ }
 .imagem img{
-    width:400px;
-    border-radius:200px;
-    margin-top: 150px;
-  }
+   width:170px;
+   border-radius:200px;
+   margin-top: 150px;
+ }
 .name{
 
-    margin-top: 10px;
-    display: flex;
-    justify-content:center;
-    font-size: 32px;
-    font-weight:600;
-    color:aquamarine;
-    font-family:"Courier New", Courier, monospace; 
-   }
+   margin-top: 10px;
+   display: flex;
+   justify-content:center;
+   font-size: 32px;
+   font-weight:600;
+   color:aquamarine;
+   font-family:"Courier New", Courier, monospace; 
+  }
 .redes-sociais{
-        margin-top: 10px;
-        display:flex;  /*organizar itens na mesma linha*/
-        justify-content: center;
-        align-items: center; /*alinhamento de itens */
-  }
-         .icon, .email {
-      display: inline-block;
-      width:35px;
-      height:35px;
-      border-radius:39px;
-      transition: all 0.3s ease-out;
-      box-shadow:0 5px 5px rgba(0,0,0.1);
-      cursor: cell;
-      margin:3px;
-      overflow: hidden;
-  }
+       margin-top: 10px;
+       margin-bottom:50px;
+       display:flex;  /*organizar itens na mesma linha*/
+       justify-content: center;
+       align-items: center; /*alinhamento de itens */
+ }
+        .icon, .email {
+     display: inline-block;
+     width:35px;
+     height:35px;
+     border-radius:39px;
+     transition: all 0.3s ease-out;
+     box-shadow:0 5px 5px rgba(0,0,0.1);
+     cursor: cell;
+     margin:3px;
+     overflow: hidden;
+ }
 
-  .icon i, .email i {
- display: inline-block;
- width:35px;
+ .icon i, .email i {
+display: inline-block;
+width:35px;
 height: 35px;
 line-height:35px;
 text-align: center;
@@ -62,46 +63,139 @@ border-radius:30px;
 background-color: rgb(237,237,237);
 color:blue;
 cursor:pointer;
-  }
+ }
 
-  .icon span a{
-   list-style:none;
-   font-family: Arial, Helvetica, sans-serif;
-   float: right;
-   margin-right:23px;
-   font-weight:100;
-   color:blue;
-   line-height:35px;
-   font-size:17px;
-  }
+ .icon span a{
+  list-style:none;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+  margin-right:23px;
+  font-weight:100;
+  color:blue;
+  line-height:35px;
+  font-size:17px;
+ }
 
-  .name-icon{
+ .name-icon{
 font-family: Arial, Helvetica, sans-serif;
 margin-right:40px;
 float: right;
 font-weight: 100;
 line-height:35px;
 font-size: 17px;
-  }
+ }
 
-  .icon:hover{
- width: 125px;
- background-color: #c7c8c8;
- border-radius:20px;
-  }
-  .icon:nth-child(1):hover i{
+ .icon:hover{
+width: 125px;
+background-color: #c7c8c8;
+border-radius:20px;
+ }
+ .icon:nth-child(1):hover i{
 background: black;
 }
 .icon:nth-child(2):hover i{
 background: #00e5ff;
-  }
-  .icon:nth-child(3):hover i{
-    background:orangered;
-  }
-  .icon:nth-child(4):hover i{
-    background: aquamarine;
-  }
-  .email.hover i{
-background:violet;
+ }
+ .icon:nth-child(3):hover i{
+   background:orangered;
+ }
+ .icon:nth-child(4):hover i{
+   background: aquamarine;
+ }
+ .email.hover i{
+background:red;
+ }
+ /* Fim Css Redes Sociais */
 
-  }
+
+ /* Css Texto */
+.texto{
+ display: flex;
+ justify-content: center; /* Centralizar Texto */
+ align-items: center; 
+margin: auto;
+margin-bottom: 35px;
+margin-top: 35px; /* Borda */
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+text-align:justify;
+width: 500px;
+height: 150px;
+padding:30px 35px;
+border-radius: 5px;
+color:aliceblue;
+color:rgb(11,80,141);
+background-color:white;
+overflow: hidden;
+box-shadow:0 3px 3px rgba (0,0,0,0.10); /* Rgb com Alhpha para transparencia */
+/*cursor: pointer; */
+}
+.titulo{
+display:flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+margin: top 20px;
+display: flex;
+color:#308ff4;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+text-align:justify;
+}
+.Linguagem{
+display: flex;
+margin-top:40px;
+justify-content: center;
+}
+.Linguagem img{
+display: flex;
+justify-content: center;
+align-items: center;
+width:160px;
+margin:5px;
+box-shadow: 2px 2px 2px rgb(98,98,98);
+}
+.Projetos {
+    margin: auto;
+    margin-top: 40px;
+    flex-direction: column;
+
+}
+Projetos.a{
+text-decoration: none; /* é usada para definir a formatação de underline */ 
+color: #c7c8c8;
+}
+.item{
+display: flex;
+justify-content: center;
+align-items:center;
+margin: auto;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 22px;
+color:#00e5ff;
+border:1px solid #00e5ff ;
+border-radius:10px;
+width: 300px;
+height:60px;
+margin-bottom:7px;
+background: #e0e2e2;
+box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+cursor: pointer;
+}
+#video{
+display: none;
+margin: auto;
+padding:10px;
+}
+#video.active{
+display: block;
+}
+.rodape{
+color:#308ff4;
+font-size:25px;
+justify-content:center;
+margin-top:50px;
+padding:50px;
+font-family: 'Times New Roman', Times, serif;
+display: flex;
+}
