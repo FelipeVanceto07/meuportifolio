@@ -40,19 +40,19 @@ body{
        justify-content: center;
        align-items: center; /*alinhamento de itens */
  }
-        .icon, .email {
+        .icon, #email {
      display: inline-block;
      width:35px;
      height:35px;
-     border-radius:39px;
-     transition: all 0.3s ease-out;
+     border-radius:30px;
+     transition: all 0.4s ease-out;
      box-shadow:0 5px 5px rgba(0,0,0.1);
      cursor: cell;
      margin:3px;
      overflow: hidden;
  }
 
- .icon i, .email i {
+ .icon i, #email i {
 display: inline-block;
 width:35px;
 height: 35px;
@@ -73,7 +73,7 @@ cursor:pointer;
   font-weight:100;
   color:blue;
   line-height:35px;
-  font-size:17px;
+  font-size:12px;
  }
 
  .name-icon{
@@ -110,72 +110,85 @@ background:red;
 
  /* Css Texto */
 .texto{
- display: flex;
- justify-content: center; /* Centralizar Texto */
- align-items: center; 
-margin: auto;
-margin-bottom: 35px;
-margin-top: 35px; /* Borda */
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-text-align:justify;
-width: 500px;
-height: 150px;
-padding:30px 35px;
-border-radius: 5px;
-color:aliceblue;
-color:rgb(11,80,141);
-background-color:white;
-overflow: hidden;
-box-shadow:0 3px 3px rgba (0,0,0,0.10); /* Rgb com Alhpha para transparencia */
+  position:relative;
+  display:flex;
+  justify-content: center; /* Centralizar Texto */
+  align-items: center; 
+ margin: auto;
+ margin-bottom: 50px;
+ margin-top: 20px; /* Borda */
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 16px;
+ text-align:justify;
+ width: 500px;
+ height: 150px;
+ padding:30px 35px;
+ border-radius: 24px;
+ color:white;
+ background-color:rgb(58, 58, 255);
+ overflow: hidden;
+ box-shadow:0 3px 3px rgba (0,0,0,0.10); /* Rgb com Alhpha para transparencia */
 /*cursor: pointer; */
 }
-.titulo{
-display:flex;
-justify-content: center;
-align-items: center;
-margin: auto;
-margin: top 20px;
-display: flex;
-color:#308ff4;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
-text-align:justify;
-}
+
+#sobre-mim{
+ position: absolute;
+ top: 15px;
+ display: flex;
+ color:white;
+font-size:25px;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+line-height:35px;
+} 
+
 .Linguagem{
 display: flex;
-margin-top:40px;
-justify-content: center;
+margin-top:10px;
+justify-content:center;
 }
+
 .Linguagem img{
 display: flex;
-justify-content: center;
-align-items: center;
-width:160px;
+justify-content:center;
+align-items:center;
+width:170px;
 margin:5px;
 box-shadow: 2px 2px 2px rgb(98,98,98);
+border-right:200px;
 }
+
 .Projetos {
     margin: auto;
     margin-top: 40px;
     flex-direction: column;
-
 }
-Projetos.a{
+
+.Projetosa{
 text-decoration: none; /* é usada para definir a formatação de underline */ 
 color: #c7c8c8;
 }
+
+.subtitulo{
+ display: flex;
+justify-content: center;
+color: #308ff4;
+font-size:25px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+margin-top:60px;
+}
+
 .item{
-display: flex;
+  margin: auto;
+  display: flex;
 justify-content: center;
 align-items:center;
-margin: auto;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 22px;
 color:#00e5ff;
 border:1px solid #00e5ff ;
-border-radius:10px;
-width: 300px;
+border-radius:100px;
+width: 530px;
 height:60px;
 margin-bottom:7px;
 background: #e0e2e2;
@@ -199,3 +212,99 @@ padding:50px;
 font-family: 'Times New Roman', Times, serif;
 display: flex;
 }
+
+/* Fim das configurações para Desktop */
+
+/* Dispositivos Mobiles */
+
+@media (max-width: 700px)   {  /* resolução 700px*/
+  .imagem img{
+   width:150px;
+   border-radius:200px;
+  margin-top:30px;
+  }
+
+ .texto{
+ width:250px;
+ height:150px;
+ }
+ 
+.Linguagem img{
+
+  width:655px;
+}
+ 
+ .item{
+ 
+    width: 70px;
+}
+
+#video{
+width:330px;
+   }
+
+} /* resolução 700px*/
+
+@media (max-width:500px)       {
+  .imagem img{
+   width:120px;
+  }
+ 
+ .texto{
+  padding:15px;
+  width:244px;
+  height: 200px;
+  margin-top:30px;
+ }
+  .subtitulo{
+    font-size:22px;
+    margin-top:22px;
+ }
+ .p{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #video{
+width:270px;
+height:160px;
+ }
+.item{
+width:265px; ;
+height:40px ;
+
+}
+.Linguagem img{
+  margin-top: 15px;
+   width: 120px;
+}
+
+.icon, #email{
+margin-top: 15px;
+width:25px;
+right:25px;
+border-radius:30px;
+}
+.icon i, #email i {
+width:25px;
+height:25px;
+line-height: 25px;
+font-size: 15px;
+border-radius:30px;
+   }
+ 
+   .icon span{
+    font-size:12px;
+    line-height: 22px;
+    margin-right:39px;
+     } 
+  .rodape{
+font-size:20px;
+margin-top:30px;
+padding: 20px;
+  }
+  
+    }
+  
