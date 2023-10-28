@@ -195,12 +195,17 @@ background: #e0e2e2;
 box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 cursor: pointer;
 }
-#video{
-display: none;
+.item:hover{
+background:blanchedalmond;
+transition:0.5s;
+
+}
+.video{
+display:none;
 margin: auto;
 padding:10px;
 }
-#video.active{
+.video.active{
 display: block;
 }
 .rodape{
